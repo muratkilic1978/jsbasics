@@ -67,6 +67,8 @@ console.log(firstName + ' ' + lastName);
 * Basic operators
 *
 */
+
+/*
 var currentYear, yearMurat, yearGertie
 currentYear = 2019;
 
@@ -95,8 +97,47 @@ console.log(typeof currentYear);
 console.log(typeof 'Gertie is older than Murat');
 console.log(typeof X);
 ;
+*/
 
+/***************************
+*  Operator precedence
+*  Check this page with JS Operator precedence
+*  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+*/
 
+var currentYear, yearMurat, yearGertie, pensionAge, qualifiedToPension, ageOfMurat, avgAge, ageOfGertie;
+currentYear = 2018;
+yearMurat = 1978;
+yearGertie = 1964;
+pensionAge = 56;
+qualifiedToPension = currentYear - yearMurat >= pensionAge;
+console.log('Is murat qualified To Pension? ' + qualifiedToPension);
+ageOfMurat = currentYear - yearMurat;
+console.log('How old is Murat? He is ' + ageOfMurat + ' years old.');
+ageOfGertie = currentYear - yearGertie;
+console.log('How old is Murat? He is ' + ageOfGertie + ' years old.');
+avgAge = (ageOfMurat + ageOfGertie) / 2;
+console.log('The average age of Murat and Gertie is ' + avgAge);
 
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; /// 8 * 4 - 6 // 32 -6 // 26
+console.log(x, y);
 
+// More operators
+//x = x * 2;
+//console.log(x);
+x *= 2;
+console.log(x);
+
+x += 10;
+console.log(x);
+
+//x = x +1; this is same as
+x++;
+console.log(x);
+
+//x = x -1; this is same as
+x--;
+console.log(x);
 
