@@ -42,7 +42,7 @@ To increase readability you should always use camel notation
 * Variables mutation and type coercion
 *
 */
-
+/*
 var firstName = 'Murat';
 var age = 40;
 
@@ -62,6 +62,40 @@ job = "driver";
 
 var lastName = prompt('What is his last Namw?');
 console.log(firstName + ' ' + lastName);
+*/
+/***************************
+* Basic operators
+*
+*/
+var currentYear, yearMurat, yearGertie
+currentYear = 2019;
+
+// Math operators
+yearMurat = currentYear - 1978;
+yearGertie = currentYear - 1963;
+console.log(yearMurat);
+console.log(yearGertie);
+console.log(currentYear + 2);
+console.log(yearMurat);
+console.log(yearGertie);
+console.log(currentYear * 2);
+console.log(yearMurat);
+console.log(yearGertie);
+console.log(currentYear / 10);
+console.log(yearMurat);
+console.log(yearGertie);
+
+// Logical operators
+var muratOlder = yearMurat > yearGertie;
+console.log('Is Murat older than Gertie? ' + muratOlder);
+
+// Typeof operators
+console.log(typeof muratOlder);
+console.log(typeof currentYear);
+console.log(typeof 'Gertie is older than Murat');
+console.log(typeof X);
+;
+
 
 
 
