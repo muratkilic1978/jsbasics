@@ -171,6 +171,7 @@ console.log('Is ' + xPersonName + '\'s BMI higher than ' + yPersonName + '\'s?' 
 *  
 */
 
+/*
 var firstName, civilStatus, isMarried;
 firstName = 'Murat';
 civilStatus = 'married';
@@ -210,4 +211,24 @@ if (xPersonCalculatedBMI > yPersonCalculatedBMI) {
     console.log(yPersonName + '\'s BMI is higher than ' + xPersonName + '\'s.');
 }
 
+*/
+
+/***************************
+*  if, else statement
+*  
+*/
+
+var firstName, age;
+firstName = 'Murat';
+age = 12;
+
+if (age < 13 ) {
+    console.log(firstName + ' is a boy.');
+} else if ( age >= 13 && age < 18) {
+    console.log(firstName + ' is a teenager.');
+} else if ( age >= 18 && age < 67 ) {
+    console.log(firstName + ' is a adult.');   
+} else {
+    console.log(firstName + ' is a pensioner.');  
+}
 
