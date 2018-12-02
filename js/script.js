@@ -105,6 +105,7 @@ console.log(typeof X);
 *  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 */
 
+/*
 var currentYear, yearMurat, yearGertie, pensionAge, qualifiedToPension, ageOfMurat, avgAge, ageOfGertie;
 currentYear = 2018;
 yearMurat = 1978;
@@ -140,4 +141,26 @@ console.log(x);
 //x = x -1; this is same as
 x--;
 console.log(x);
+*/
+
+/***************************
+*  JS Challenge 01
+*  
+*/
+
+var xPersonName, yPersonName, xPersonHeightInMeter, xPersonWeightInKg, xPersonCalculatedBMI, yPersonHeightInMeter, yPersonWeightInKg, yPersonCalculatedBMI, xPersonHasHigherBMI;
+
+xPersonName = prompt('Please enter your name');
+xPersonWeightInKg = prompt('Please enter your Weight in kilogram');
+xPersonHeightInMeter = prompt('Please enter your Height in meter. Hint use dot as a decimal separator');
+xPersonCalculatedBMI = (xPersonWeightInKg / (xPersonHeightInMeter * xPersonHeightInMeter));
+console.log( xPersonName+ ' has a BMI at ' + xPersonCalculatedBMI);
+
+yPersonName = prompt('Please enter your name');
+yPersonWeightInKg = prompt('Please enter your Weight in kilogram');
+yPersonHeightInMeter = prompt('Please enter your Height in meter. Hint use dot as a decimal separator');
+yPersonCalculatedBMI = (yPersonWeightInKg / (yPersonHeightInMeter * yPersonHeightInMeter));
+console.log( yPersonName +' Mark has a BMI at ' + yPersonCalculatedBMI);
+xPersonHasHigherBMI = xPersonCalculatedBMI > yPersonCalculatedBMI;
+console.log('Is ' + xPersonName + '\'s BMI higher than ' + yPersonName + '\'s?' + xPersonHasHigherBMI);
 
