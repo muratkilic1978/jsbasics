@@ -148,6 +148,7 @@ console.log(x);
 *  
 */
 
+/*
 var xPersonName, yPersonName, xPersonHeightInMeter, xPersonWeightInKg, xPersonCalculatedBMI, yPersonHeightInMeter, yPersonWeightInKg, yPersonCalculatedBMI, xPersonHasHigherBMI;
 
 xPersonName = prompt('Please enter your name');
@@ -163,4 +164,50 @@ yPersonCalculatedBMI = (yPersonWeightInKg / (yPersonHeightInMeter * yPersonHeigh
 console.log( yPersonName +' Mark has a BMI at ' + yPersonCalculatedBMI);
 xPersonHasHigherBMI = xPersonCalculatedBMI > yPersonCalculatedBMI;
 console.log('Is ' + xPersonName + '\'s BMI higher than ' + yPersonName + '\'s?' + xPersonHasHigherBMI);
+*/
+
+/***************************
+*  if, else statement
+*  
+*/
+
+var firstName, civilStatus, isMarried;
+firstName = 'Murat';
+civilStatus = 'married';
+
+//if (civilStatus === 'married') {
+//    console.log(firstName + ' is married');
+//    
+//} else {
+//    console.log(firstName + ' is single');
+//}
+ 
+isMarried = false;
+if (isMarried) {
+    console.log(firstName + ' is married');
+    
+} else {
+    console.log(firstName + ' is single');
+}
+
+var xPersonName, yPersonName, xPersonHeightInMeter, xPersonWeightInKg, xPersonCalculatedBMI, yPersonHeightInMeter, yPersonWeightInKg, yPersonCalculatedBMI, xPersonHasHigherBMI;
+
+xPersonName = prompt('Please enter your name');
+xPersonWeightInKg = prompt('Please enter your Weight in kilogram');
+xPersonHeightInMeter = prompt('Please enter your Height in meter. Hint use dot as a decimal separator');
+xPersonCalculatedBMI = (xPersonWeightInKg / (xPersonHeightInMeter * xPersonHeightInMeter));
+console.log( xPersonName+ ' has a BMI at ' + xPersonCalculatedBMI);
+
+yPersonName = prompt('Please enter your name');
+yPersonWeightInKg = prompt('Please enter your Weight in kilogram');
+yPersonHeightInMeter = prompt('Please enter your Height in meter. Hint use dot as a decimal separator');
+yPersonCalculatedBMI = (yPersonWeightInKg / (yPersonHeightInMeter * yPersonHeightInMeter));
+console.log( yPersonName +' Mark has a BMI at ' + yPersonCalculatedBMI);
+
+if (xPersonCalculatedBMI > yPersonCalculatedBMI) {
+    console.log(xPersonName + '\'s BMI is higher than ' + yPersonName + '\'s.');
+} else {
+    console.log(yPersonName + '\'s BMI is higher than ' + xPersonName + '\'s.');
+}
+
 
