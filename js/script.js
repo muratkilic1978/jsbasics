@@ -214,10 +214,11 @@ if (xPersonCalculatedBMI > yPersonCalculatedBMI) {
 */
 
 /***************************
-*  if, else statement
+*  Boolean logic
 *  
 */
 
+/*
 var firstName, age;
 firstName = 'Murat';
 age = 12;
@@ -231,4 +232,69 @@ if (age < 13 ) {
 } else {
     console.log(firstName + ' is a pensioner.');  
 }
+*/
 
+/***************************
+*  Ternary operator and switch statements
+*  
+*/
+
+// Ternary operator
+var firstName, age, drink;
+firstName = 'John';
+age = 40;
+
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice');
+
+drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+
+//Now I write the same thing with an if else statement
+
+if (age >=18 ) {
+    var drink = 'beer';
+    //alert(drink);
+} else {
+    var drink = 'juice';
+    //alert(drink);
+}
+
+// Switch statement
+
+var job = 'instructor';
+switch(job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches students how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives a taxi in Aarhus City.');
+        break;
+    case 'designer':
+        console.log(firstName + ' design beatiful websites.');
+        break;
+    case 'policeofficer':
+        console.log(firstName + ' uphold law and order through detection.');
+        break;
+    default:
+        console.log(firstName + ' does something else.')
+}
+
+// Alternative to a switch statement - if else statement
+
+age = 62;
+switch(true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 18:
+        console.log(firstName + ' is a teenager.');
+        break;
+    case age >= 18 && age < 67:
+        console.log(firstName + ' is a adult.');
+        break;
+    default: 
+        console.log(firstName + ' is a pensioner.'); 
+    } 
+  
