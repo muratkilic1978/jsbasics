@@ -214,7 +214,7 @@ if (xPersonCalculatedBMI > yPersonCalculatedBMI) {
 */
 
 /***************************
-*  if, else statement
+* Boolean Logic
 *  
 */
 
