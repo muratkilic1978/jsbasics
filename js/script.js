@@ -332,7 +332,32 @@ if (height === '23') {
 
 1. Calculate the average score for each team
 2. Decide which teams wins in average (highest average score), and print the winner to the console. Also include the average score in the output.
-3. Then change the scores to show different winners. Donøt forget to take into account there might be a draw (the same average score).
+3. Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score).
 
 GOOD LUCK :-)
 */
+
+var scoreJohn = (98 + 20 + 103) / 3;
+var scoreMike = (116 + 94 + 123) / 3;
+var scoreMary = (97 + 134 + 105) / 3;
+console.log(scoreJohn, scoreMike, scoreMary);
+
+if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+    console.log('John\s team wins with ' + scoreJohn + ' points');
+} else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+    console.log('Mike\s team wins with ' + scoreJohn + ' points');
+} else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+    console.log('Mary\s team wins with ' + scoreMary + ' points');
+}  else {
+    console.log('There is a draw');
+}
+
+/*if (scoreJohn > scoreJohn) {
+    console.log('John\s team wins with ' + scoreJohn ' points');
+} else if (scoreMike > scoreJohn) {
+    console.log('Mike\s team wins with ' + scoreJohn ' points');
+} else {
+    console.log('There is a draw');
+}*/
+
+
