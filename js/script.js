@@ -337,10 +337,14 @@ if (height === '23') {
 GOOD LUCK :-)
 */
 
-var scoreJohn = (98 + 20 + 103) / 3;
+var scoreJohn = (98 + 134 + 103) / 3;
+scoreJohn = scoreJohn.toFixed(2);
 var scoreMike = (116 + 94 + 123) / 3;
-var scoreMary = (97 + 134 + 105) / 3;
+scoreMike = scoreMike.toFixed(2);
+var scoreMary = (97 + 134 + 55) / 3;
+scoreMary = scoreMary.toFixed(2);
 console.log(scoreJohn, scoreMike, scoreMary);
+
 
 if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
     console.log('John\s team wins with ' + scoreJohn + ' points');
