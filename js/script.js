@@ -337,7 +337,7 @@ if (height === '23') {
 GOOD LUCK :-)
 */
 
-var scoreJohn = (98 + 134 + 103) / 3;
+/*var scoreJohn = (98 + 134 + 103) / 3;
 scoreJohn = scoreJohn.toFixed(2);
 var scoreMike = (116 + 94 + 123) / 3;
 scoreMike = scoreMike.toFixed(2);
@@ -355,7 +355,7 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 }  else {
     console.log('There is a draw');
 }
-
+*/
 /*if (scoreJohn > scoreJohn) {
     console.log('John\s team wins with ' + scoreJohn ' points');
 } else if (scoreMike > scoreJohn) {
@@ -365,3 +365,34 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 }*/
 
 
+/***************************
+*  JS Functions
+*  
+*/
+
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1933);
+var ageMike = calculateAge(1948);
+var ageMary = calculateAge(1964);
+var ageLarry = calculateAge(1918);
+console.log(ageJohn, ageMike, ageLarry, ageMary);
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = (68 - age);
+    
+    if (retirement > 0 ) {
+     console.log(firstName + ' retires in ' + retirement + ' years.')
+    } else {
+     console.log(firstName + ' is already retired.');
+    }  
+}
+   
+
+yearsUntilRetirement(1978, "Murat");
+yearsUntilRetirement(1969, "Hamdi");
+yearsUntilRetirement(1949, "Gertie");
+yearsUntilRetirement(1924, "Yvonne");
