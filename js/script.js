@@ -370,7 +370,7 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 *  
 */
 
-function calculateAge(birthYear) {
+/*function calculateAge(birthYear) {
     return 2018 - birthYear;
 }
 
@@ -396,3 +396,32 @@ yearsUntilRetirement(1978, "Murat");
 yearsUntilRetirement(1969, "Hamdi");
 yearsUntilRetirement(1949, "Gertie");
 yearsUntilRetirement(1924, "Yvonne");
+*/
+
+/***************************
+*  JS Functions Statements and expressions
+*  
+*/
+
+// Function declaration
+/*function whatDoTouWorkWith(job, firstName) {
+
+}
+*/
+
+// Functions expression
+var whatDoYouWorkWith = function (job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kid how to code';
+        case 'driver':
+            return firstName + ' drives a can in Lissbon';    
+        case 'designer':
+            return firstName + ' designs beatifuk Websites';
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouWorkWith('teacher', 'John'));
+console.log(whatDoYouWorkWith('laywer', 'Melissa'));
