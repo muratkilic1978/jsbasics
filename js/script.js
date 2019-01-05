@@ -530,7 +530,7 @@ console.log(tips, totalBills);
 */
 // Creating a object (john) with following properties {firstName, lastName, birthYear, ect.}
 //Object Literal syntax
-var john = {
+/*var john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1978,
@@ -574,3 +574,43 @@ var danny = {
     isMarried: true
 }
 console.log(danny);
+*/
+/***************************
+*  JS Objects and Methods
+*  
+*/
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1988,
+    family: ['Jane', 'Mark', 'Bob', 'William'],
+    job: 'teacher',
+    isMarried: false,
+    /*calcAge: function(birthYear){
+        var date = new Date();
+        var currentYear = date.getFullYear();
+        return currentYear - birthYear; // this means the current object "john's" birthyear property
+    }*/
+    calcAge: function(){
+        var date = new Date();
+        var currentYear = date.getFullYear();
+        //return currentYear - this.birthYear; // this means the current object "john's" birthyear property
+        this.age = currentYear - this.birthYear;
+    }
+};
+
+console.log(john.calcAge());
+console.log(john);
+
+john.sex = "male";
+console.log(john.sex);
+
+// create a property age and insert John's age
+/*var age = john.calcAge();
+john.age = age;
+console.log(john);
+
+// Another way to rewrite above code
+john.age = john.calcAge();
+console.log(john);
+*/
