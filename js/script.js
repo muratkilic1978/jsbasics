@@ -410,6 +410,7 @@ yearsUntilRetirement(1924, "Yvonne");
 */
 
 // Functions expression
+/*
 var whatDoYouWorkWith = function (job, firstName) {
     switch(job) {
         case 'teacher':
@@ -425,3 +426,50 @@ var whatDoYouWorkWith = function (job, firstName) {
 
 console.log(whatDoYouWorkWith('teacher', 'John'));
 console.log(whatDoYouWorkWith('laywer', 'Melissa'));
+*/
+
+/***************************
+*  JS Arrays
+*  
+*/
+// Initialize new array
+var names = ['John', 'Melissa', 'Mark', 'Luis', 'Jenniffer'];
+var years = new Array(1864, 1970, 1999, 2001, 2008);
+
+//console.log(names[0]);
+//console.log(names.length);
+
+// Mutate array data
+names[1] = 'Ben';
+names[7] = 'Kevin';
+//console.log(names);
+
+// Different data types
+
+var john = ['John','Danial','Paul',1990,'teacher',2000, false];
+console.log(john);
+console.log(john.length);
+
+john.push('blue'); //add string element to the tail of the array
+john.unshift('Mr'); //add string element to the head of the array
+console.log(john); //print out the array to console
+john.pop(); // removes element from the tail of the array
+console.log(john);
+john.pop(); // removes element from the tail of the array
+
+console.log(john);
+console.log(john.length); //print out number of element in the array
+
+john.shift(); // removes element from the head of the array
+console.log(john);
+
+console.log(john.indexOf('Paul')); //returns the position of the element in the array
+
+console.log(john.indexOf('George')); //returns -1 if the element is not included in the array
+
+//john.indexOf('designer') === -1 ? console.log('designer IS NOT included in the array') : console.log('designer is included in the array');
+
+var isDesignerIncluded = john.indexOf('teacher') === -1 ? 'designer IS NOT included in the array' : 'designer is included in the array';
+
+console.log(isDesignerIncluded);
+
