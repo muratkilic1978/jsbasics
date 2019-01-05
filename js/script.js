@@ -499,7 +499,7 @@ GOOD LUCK :-)
 *  
 */
 
-function tipCalculator(bill) {
+/*function tipCalculator(bill) {
     var percentage;
     if(bill < 50){
         percentage = .2;   
@@ -522,3 +522,55 @@ var totalBills = [bills[0] + tips[0],
                 ]
             
 console.log(tips, totalBills);
+*/
+
+/***************************
+*  JS Objects and properties
+*  
+*/
+// Creating a object (john) with following properties {firstName, lastName, birthYear, ect.}
+//Object Literal syntax
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1978,
+    family: ['Jane', 'Mark', 'Bob', 'William'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.firstName);
+console.log(john['lastName']);
+console.log(john.family[1]);
+console.log(john.isMarried);
+
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+console.log(john.job);
+console.log(john);
+
+john.isMarried = false;
+console.log(john.isMarried);
+console.log(john);
+john.isMarried = true;
+
+//New object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.lastName = 'Larryson';
+jane.birthYear = 1990;
+jane.family = ['Mario', 'James'];
+console.log(jane);
+
+//Object Literal syntax
+var danny = {
+    firstName: 'Danny',
+    lastName: 'Tyson',
+    birthYear: 1990,
+    family: ['Mario', 'James'],
+    job: 'Police officer',
+    isMarried: true
+}
+console.log(danny);
