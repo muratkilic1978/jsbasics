@@ -579,19 +579,20 @@ console.log(danny);
 *  JS Objects and Methods
 *  
 */
-var john = {
+/*var john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1988,
     family: ['Jane', 'Mark', 'Bob', 'William'],
     job: 'teacher',
     isMarried: false,
+    */
     /*calcAge: function(birthYear){
         var date = new Date();
         var currentYear = date.getFullYear();
         return currentYear - birthYear; // this means the current object "john's" birthyear property
     }*/
-    calcAge: function(){
+    /*calcAge: function(){
         var date = new Date();
         var currentYear = date.getFullYear();
         //return currentYear - this.birthYear; // this means the current object "john's" birthyear property
@@ -604,7 +605,7 @@ console.log(john);
 
 john.sex = "male";
 console.log(john.sex);
-
+*/
 // create a property age and insert John's age
 /*var age = john.calcAge();
 john.age = age;
@@ -614,3 +615,12 @@ console.log(john);
 john.age = john.calcAge();
 console.log(john);
 */
+
+/***************************
+*  JS Challenge 04
+*  
+*/
+Let's remember tge first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods. 
+1. For each of them, create an object properties for their full name, weight and height.
+2. Then, add a metjod to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
+3. In the end, log to the console, who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.
