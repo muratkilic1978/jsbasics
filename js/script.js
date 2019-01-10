@@ -645,15 +645,13 @@ var john = {
 var mark = {
     firstName: 'Mark',
     lastName: 'Jones',
-    weight: 61,
+    weight: 91,
     height: 1.63,
     calcBMI: function(){
         this.bmi = (this.weight / (this.height * this.height));
         return this.bmi;
     }
 }
-
-
 
 
 if (john.calcBMI() > mark.calcBMI()) {
